@@ -68,7 +68,7 @@ class Home extends React.Component {
           ))}
           <Card onClick={this.LoadMore} fluid style={{ textAlign: "center" }}>
             <Header>
-              {this.state.count < 9n
+              {this.state.count < 9
                 ? "Click To Load More"
                 : "There Is No More To Load"}
             </Header>
