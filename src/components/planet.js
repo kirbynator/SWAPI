@@ -16,7 +16,19 @@ class World extends React.Component {
     return (
       <div>
         <Image rounded src={z} />
-        <Header style={{ fontSize: "100px" }}>{v.home.name}</Header>
+        <Header
+          style={
+            window.innerWidth > 1000
+              ? { fontSize: "100px" }
+              : {
+                  fontSize: "50px",
+                  writingMode: "vertical-rl",
+                  textOrientation: "upright"
+                }
+          }
+        >
+          {v.home.name}
+        </Header>
       </div>
     );
   }
